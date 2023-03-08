@@ -141,7 +141,7 @@
             }
 
             hasil = (target*persentase);
-            document.getElementById('hasila').innerHTML = "You must put aside " + hasil + " for tax.";
+            document.getElementById('hasila').innerHTML = "You must put aside " + hasil + " RM for tax.";
         }
     </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->

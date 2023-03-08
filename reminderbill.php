@@ -20,6 +20,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css">
 
     <title>Reminder Bill - Reminder Bill</title>
@@ -85,6 +87,12 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js\bootstrap.bundle.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            console.log( "ready!" );
+        });
+    </script>
+
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
