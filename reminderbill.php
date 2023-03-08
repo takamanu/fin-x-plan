@@ -53,7 +53,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
         <div class="row top-buffer">
             <div class="col d-flex justify-content-center">
-                <img src = "assets/calendar.svg" alt="Company Profile"/>
+                <img src = "assets/calendar.svg" id="idClick" alt="Company Profile"/>
             </div>
         </div>
         <div class="row top-buffer">
@@ -89,6 +89,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <script src="js\bootstrap.bundle.min.js"></script>
     <script>
         $( document ).ready(function() {
+            $('#idClick').on('click', function(e){
+                swal.fire(
+                    'The Internet?',
+                    'That thing is still around?',
+                    'question'
+                )
+                e.preventDefault();
+            })
             console.log( "ready!" );
         });
     </script>
