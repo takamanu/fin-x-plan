@@ -58,7 +58,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
         <div class="row top-buffer">
             <div class="col d-flex justify-content-center">
-                <button type="button" id="idClick" class="btn btn-warning rounded-xl">&nbsp;&nbsp;Check&nbsp;&nbsp;</button>
+                <button type="button" id="idClick2" class="btn btn-warning rounded-xl">&nbsp;&nbsp;Check&nbsp;&nbsp;</button>
             </div>
         </div>
         <br>
@@ -90,6 +90,14 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <script>
         $( document ).ready(function() {
             $('#idClick').on('click', function(e){
+                swal.fire(
+                    'Information',
+                    'You have have tax payment on 16 and 24 July coming up.',
+                    'success'
+                )
+                e.preventDefault();
+            })
+            $('#idClick2').on('click', function(e){
                 swal.fire(
                     'Information',
                     'You have have tax payment on 16 and 24 July coming up.',
