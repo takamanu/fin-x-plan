@@ -13,7 +13,7 @@
     
     <link rel="stylesheet" href="style.css">
 
-    <title>Actual Sales - FinXPlan</title>
+    <title>Actual Cost - FinXPlan</title>
   </head>
   <body>
     <form onsubmit="return false;" method="post">
@@ -26,7 +26,7 @@
                         <a href="actualsales.php"><img src="assets/backh.svg" alt="Back"/></a>
                     </div>
                     <div class="col-sm-10">
-                        <h2 style="color: white;">Actual Sales</h2>
+                        <h2 style="color: white;">Actual Cost</h2>
                     </div>
                 </div>
             </div>
@@ -59,6 +59,27 @@
                     <input type="number" class="form-control" id="sales" name="sales" aria-describedby="basic-addon2">
                 </div>
             </div> 
+            <div class="row top-buffer">
+                <label for="pilihmana">Choose tax option</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        10%
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        20%
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        25%
+                    </label>
+                </div>
+            </div>
             <div class="row top-buffer">
                 <div class="col d-flex justify-content-start">
                     <button type="submit" name="submit" onclick="actualSales()" class="btn btn-warning rounded-xl">&nbsp;&nbsp;Update&nbsp;&nbsp;</button>
