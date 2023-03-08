@@ -1,0 +1,33 @@
+
+* {font-family: 'Nunito', sans-serif;}
+
+.top-buffer { margin-top: 40px; }
+
+.rounded-xl {
+    border-radius: 1.5rem;
+  }
+
+.rounded-nav {
+  border-radius: 0rem 0rem 1rem 1rem;
+}
+
+.bg-choc {
+    background-color: rgb(127, 0, 0);
+    height: 100px;
+}
+
+.bg-oren {
+    background-color: rgb(246, 93, 70);
+    height: 100px;
+}
+
+.bg-coklat {
+  background-color: rgb(59, 29, 44);
+  height: 100px;
+}
+
+.bg-kuning {
+  background-color: rgb(255, 170, 91);
+  height: 100px;
+}
+
