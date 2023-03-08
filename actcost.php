@@ -39,7 +39,7 @@
             </div>    -->
             <div class="row top-buffer">
                 <div class="col d-flex justify-content-start">
-                    <p><b>Your Target</b></p>
+                    <p><b>Your Income</b></p>
                 </div>
             </div>
             <div class="row">
@@ -60,23 +60,23 @@
                 </div>
             </div> 
             <div class="row top-buffer">
-                <label for="pilihmana">Choose tax option</label>
+                <label for="pilihmana"><b>Choose tax option</b></label>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="sepuluhpersen" id="sepuluhpersen">
                     <label class="form-check-label" for="flexRadioDefault1">
                         10%
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                    <input class="form-check-input" type="radio" name="duapuluhpersen" id="duapuluhpersen" checked>
                     <label class="form-check-label" for="flexRadioDefault2">
                         20%
                     </label>
                 </div>
                 <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <input class="form-check-input" type="radio" name="tigapuluhpersen" id="tigapuluhpersen">
                     <label class="form-check-label" for="flexRadioDefault1">
-                        25%
+                        30%
                     </label>
                 </div>
             </div>
@@ -126,6 +126,19 @@
 
             var target = document.getElementById("target").value;
             var sales = document.getElementById("sales").value;
+            var persentase = 0;
+
+            if(document.getElementById('sepuluhpersen').checked) {
+               persentase = 0.1; 
+            //Male radio button is checked
+            }else if(document.getElementById('duapuluhpersen').checked) {
+                persentase = 0.2;
+                //Female radio button is checked
+            } else if (document.getElementById('duapuluhpersen').checked) {
+                persentase = 0.3;
+            } else {
+                persentase = 1;
+            }
 
             hasil = (target/sales)*100;
             document.getElementById('hasila').innerHTML = hasil + "%";
