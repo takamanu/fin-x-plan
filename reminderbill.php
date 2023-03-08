@@ -58,7 +58,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
         <div class="row top-buffer">
             <div class="col d-flex justify-content-center">
-                <button type="button" class="btn btn-warning rounded-xl">&nbsp;&nbsp;Edit&nbsp;&nbsp;</button>
+                <button type="button" id="idClick" class="btn btn-warning rounded-xl">&nbsp;&nbsp;Check&nbsp;&nbsp;</button>
             </div>
         </div>
         <br>
