@@ -91,9 +91,9 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         $( document ).ready(function() {
             $('#idClick').on('click', function(e){
                 swal.fire(
-                    'The Internet?',
-                    'That thing is still around?',
-                    'question'
+                    'Information',
+                    'You have have tax payment on 16 and 24 July coming up.',
+                    'success'
                 )
                 e.preventDefault();
             })
