@@ -48,7 +48,7 @@
                     <input type="number" class="form-control" id="target" name="target" aria-describedby="basic-addon1" width="30px">
                 </div>
             </div>     
-            <div class="row top-buffer">
+            <!-- <div class="row top-buffer">
                 <div class="col d-flex justify-content-start">
                     <p><b>Actual Sales</b></p>
                 </div>
@@ -58,7 +58,7 @@
                     <span class="input-group-text" id="basic-addon2">RM</span>
                     <input type="number" class="form-control" id="sales" name="sales" aria-describedby="basic-addon2">
                 </div>
-            </div> 
+            </div>  -->
             <div class="row top-buffer">
                 <label for="pilihmana"><b>Choose tax option</b></label>
                 <div class="form-check">
@@ -125,7 +125,7 @@
         function actualSales() {
 
             var target = document.getElementById("target").value;
-            var sales = document.getElementById("sales").value;
+            // var sales = document.getElementById("sales").value;
             var persentase = 0;
 
             if(document.getElementById('sepuluhpersen').checked) {
@@ -140,8 +140,8 @@
                 persentase = 1;
             }
 
-            hasil = (target/sales)*100;
-            document.getElementById('hasila').innerHTML = hasil + "%";
+            hasil = (target*persentase);
+            document.getElementById('hasila').innerHTML = "You must put aside " + hasil + " for tax.";
         }
     </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
