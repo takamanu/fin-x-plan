@@ -48,7 +48,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>    -->
         <div class="row top-buffer">
             <div class="col d-flex justify-content-center">
-                <h2>July 2022</h2>
+                <h2>April 2024</h2>
             </div>
         </div>
         <div class="row top-buffer">
@@ -63,29 +63,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </div>
         <br>
 
-        <!-- <div class="row top-buffer">
-            <div class="col d-flex justify-content-end">
-                <img src = "cprofile.svg" alt="Company Profile" />
-            </div>
-            <div class="col d-flex justify-content-start">
-                <img src = "savings.svg" alt="Company Profile"/>
-            </div>
-        </div>
-        <div class="row top-buffer">
-            <div class="col d-flex justify-content-center">
-                <img src = "reminderbill.svg" alt="Company Profile" />
-            </div>
-        </div>
-        <div class="row top-buffer">
-            <div class="col d-flex justify-content-center">
-                <img src = "actualsales.svg" alt="Company Profile"/>
-            </div>
-        </div>
-    </div>     -->
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="js\bootstrap.bundle.min.js"></script>
     <script>
         $( document ).ready(function() {
